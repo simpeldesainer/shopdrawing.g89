@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Projects & Portfolios</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation / Header Bar -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Brand Logo" class="brand-logo" onerror="this.style.display='none'; document.getElementById('alt-logo').style.display='block';" />
+      <span id="alt-logo" class="brand-text" style="display: none;">Galerie<sup>89</sup></span>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    <section class="page-title-section">
+      <h1 class="page-title">Your Projects</h1>
+      <p class="page-subtitle">Pick a project to view details and open PDF documentation.</p>
+    </section>
+
+    <!-- Project Cards Grid -->
+    <section class="projects-grid">
+
+      <!-- Card 1 -->
+      <article class="project-card">
+        <a href="https://drive.google.com/file/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+          <div class="card-media">
+            <iframe src="https://drive.google.com/file/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP/preview" class="pdf-frame-preview" loading="lazy"></iframe>
+            <span class="no-photo-fallback">No photos yet</span>
+          </div>
+        </a>
+        <div class="card-info">
+          <h2 class="project-name">
+            <a href="https://drive.google.com/file/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 1</a>
+          </h2>
+          <p class="project-location">Architectural Layout &amp; Concept</p>
+          <span class="project-meta">1 document • PDF View</span>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="project-card">
+        <a href="https://drive.google.com/file/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+          <div class="card-media">
+            <iframe src="https://drive.google.com/file/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999/preview" class="pdf-frame-preview" loading="lazy"></iframe>
+            <span class="no-photo-fallback">No photos yet</span>
+          </div>
+        </a>
+        <div class="card-info">
+          <h2 class="project-name">
+            <a href="https://drive.google.com/file/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 2</a>
+          </h2>
+          <p class="project-location">Interior Design Proposal</p>
+          <span class="project-meta">1 document • PDF View</span>
+        </div>
+      </article>
+
+      <!-- Card 3 (Placeholder) -->
+      <article class="project-card">
+        <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+          <div class="card-media">
+            <iframe src="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_3/preview" class="pdf-frame-preview" loading="lazy"></iframe>
+            <span class="no-photo-fallback">No photos yet</span>
+          </div>
+        </a>
+        <div class="card-info">
+          <h2 class="project-name">
+            <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_3/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 3</a>
+          </h2>
+          <p class="project-location">Material Boards &amp; Specs</p>
+          <span class="project-meta">1 document • PDF View</span>
+        </div>
+      </article>
+
+      <!-- Card 4 (Placeholder) -->
+      <article class="project-card">
+        <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_4/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+          <div class="card-media">
+            <iframe src="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_4/preview" class="pdf-frame-preview" loading="lazy"></iframe>
+            <span class="no-photo-fallback">No photos yet</span>
+          </div>
+        </a>
+        <div class="card-info">
+          <h2 class="project-name">
+            <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_4/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 4</a>
+          </h2>
+          <p class="project-location">Transit Infrastructure CAD</p>
+          <span class="project-meta">1 document • PDF View</span>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
