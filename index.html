@@ -14,6 +14,7 @@
   <!-- Top Navigation / Header Bar -->
   <header class="navbar">
     <div class="logo-container">
+      <!-- Local logo image in assets/logo.png -->
       <img src="assets/logo.png" alt="Brand Logo" class="brand-logo" onerror="this.style.display='none'; document.getElementById('alt-logo').style.display='block';" />
       <span id="alt-logo" class="brand-text" style="display: none;">Galerie<sup>89</sup></span>
     </div>
@@ -23,7 +24,7 @@
   <main class="container">
     <section class="page-title-section">
       <h1 class="page-title">Your Projects</h1>
-      <p class="page-subtitle">Pick a project to view details and open PDF documentation.</p>
+      <p class="page-subtitle">Pick a project to view details and preview PDF documentation.</p>
     </section>
 
     <!-- Project Cards Grid -->
@@ -31,43 +32,41 @@
 
       <!-- Card 1 -->
       <article class="project-card">
-        <a href="https://drive.google.com/file/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+        <a href="https://drive.google.com/file/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP/preview" onclick="openPdfWindow(event, this.href)" class="card-media-link">
           <div class="card-media">
-            <!-- Public thumbnail image from Google Drive without requiring login -->
             <img src="https://lh3.googleusercontent.com/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP" alt="Project 1 Preview" class="card-thumb-img" onerror="this.onerror=null; this.parentNode.classList.add('no-image'); this.style.display='none';" />
             <span class="no-photo-fallback">No photos yet</span>
           </div>
         </a>
         <div class="card-info">
           <h2 class="project-name">
-            <a href="https://drive.google.com/file/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 1</a>
+            <a href="https://drive.google.com/file/d/1NSCv_-9SAldLdIsY4H62vewJV3Yc3SKP/preview" onclick="openPdfWindow(event, this.href)">PROJECT 1</a>
           </h2>
           <p class="project-location">Architectural Layout &amp; Concept</p>
-          <span class="project-meta">1 document • PDF View</span>
+          <span class="project-meta">1 document • PDF Preview</span>
         </div>
       </article>
 
       <!-- Card 2 -->
       <article class="project-card">
-        <a href="https://drive.google.com/file/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+        <a href="https://drive.google.com/file/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999/preview" onclick="openPdfWindow(event, this.href)" class="card-media-link">
           <div class="card-media">
-            <!-- Public thumbnail image from Google Drive without requiring login -->
             <img src="https://lh3.googleusercontent.com/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999" alt="Project 2 Preview" class="card-thumb-img" onerror="this.onerror=null; this.parentNode.classList.add('no-image'); this.style.display='none';" />
             <span class="no-photo-fallback">No photos yet</span>
           </div>
         </a>
         <div class="card-info">
           <h2 class="project-name">
-            <a href="https://drive.google.com/file/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 2</a>
+            <a href="https://drive.google.com/file/d/14Cd77sO1SpwsXhJywmvJ-xi57W6MU999/preview" onclick="openPdfWindow(event, this.href)">PROJECT 2</a>
           </h2>
           <p class="project-location">Interior Design Proposal</p>
-          <span class="project-meta">1 document • PDF View</span>
+          <span class="project-meta">1 document • PDF Preview</span>
         </div>
       </article>
 
       <!-- Card 3 (Placeholder) -->
       <article class="project-card">
-        <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+        <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_3/preview" onclick="openPdfWindow(event, this.href)" class="card-media-link">
           <div class="card-media">
             <img src="https://lh3.googleusercontent.com/d/YOUR_PDF_FILE_ID_3" alt="Project 3 Preview" class="card-thumb-img" onerror="this.onerror=null; this.parentNode.classList.add('no-image'); this.style.display='none';" />
             <span class="no-photo-fallback">No photos yet</span>
@@ -75,16 +74,16 @@
         </a>
         <div class="card-info">
           <h2 class="project-name">
-            <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_3/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 3</a>
+            <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_3/preview" onclick="openPdfWindow(event, this.href)">PROJECT 3</a>
           </h2>
           <p class="project-location">Material Boards &amp; Specs</p>
-          <span class="project-meta">1 document • PDF View</span>
+          <span class="project-meta">1 document • PDF Preview</span>
         </div>
       </article>
 
       <!-- Card 4 (Placeholder) -->
       <article class="project-card">
-        <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_4/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="card-media-link">
+        <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_4/preview" onclick="openPdfWindow(event, this.href)" class="card-media-link">
           <div class="card-media">
             <img src="https://lh3.googleusercontent.com/d/YOUR_PDF_FILE_ID_4" alt="Project 4 Preview" class="card-thumb-img" onerror="this.onerror=null; this.parentNode.classList.add('no-image'); this.style.display='none';" />
             <span class="no-photo-fallback">No photos yet</span>
@@ -92,10 +91,10 @@
         </a>
         <div class="card-info">
           <h2 class="project-name">
-            <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_4/view?usp=sharing" target="_blank" rel="noopener noreferrer">PROJECT 4</a>
+            <a href="https://drive.google.com/file/d/YOUR_PDF_FILE_ID_4/preview" onclick="openPdfWindow(event, this.href)">PROJECT 4</a>
           </h2>
           <p class="project-location">Transit Infrastructure CAD</p>
-          <span class="project-meta">1 document • PDF View</span>
+          <span class="project-meta">1 document • PDF Preview</span>
         </div>
       </article>
 
